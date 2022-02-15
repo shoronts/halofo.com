@@ -1,0 +1,954 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 80px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+    z-index: 999999;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 999999999999;
+}
+
+.logo {
+    height: 80px;
+    width: 80px;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.menu-bar {
+    color: blue;
+    font-size: 25px;
+}
+
+.navber {
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.header-menu ul {
+    display: flex;
+}
+
+.header-menu li {
+    list-style-type: none;
+}
+
+.active {
+    color: #2D68FA !important;
+}
+
+.header-menu li a {
+    margin-left: 25px;
+    color: #35783e;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: "IBM Plex Sans Condensed", Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 800;
+}
+
+.header-menu li a:hover {
+    text-decoration: none;
+    color: #2D68FA;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    background: transparent !important;
+}
+
+
+
+.navbar {
+    padding: 0 !important;
+}
+
+.header-menu.header-menu-hidden {
+    margin-top: 13px;
+}
+
+/* -----------------------header end------------------ */
+
+
+/* -----------------1st section area start---------------- */
+
+.sections {
+    display: flex;
+    justify-content: space-between;
+    margin: 4% 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-area {
+    width: 33%;
+    height: 350px;
+    padding: 10px;
+    z-index: 999999;
+}
+
+.img-area img {
+    width: 100%;
+    height: 100%;
+}
+
+.title-area {
+    width: 65%;
+}
+
+.first-section-title {
+    margin-top: 130px;
+    font-size: 140px;
+    font-weight: bolder;
+    line-height: 130px;
+    color: #22783e;
+    font-style: oblique;
+}
+
+.color-line {
+    display: block;
+    height: 22px;
+    background-color: #ff9f97;
+    margin-bottom: 110px;
+}
+
+.bg-green {
+    position: absolute;
+    height: 40px;
+    width: 100px;
+    background-color: #35783e;
+}
+
+.top-left-box {
+    top: 0;
+    left: 0;
+}
+
+.bottom-right-box {
+    bottom: 0;
+    right: 0;
+}
+
+.bg-img {
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    z-index: 99999999;
+}
+
+.bg-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.img-bottum {
+    bottom: -143px;
+    left: -60px;
+    transform: rotate(53deg);
+}
+
+/* -----------------2nd section area start---------------- */
+
+.second-section-img {
+    width: 33%;
+    height: 280px;
+    padding: 0;
+}
+
+.second-section-title {
+    font-size: 100px;
+    line-height: 100px;
+    color: #38b6ff;
+    font-style: oblique;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.second-section-title span {
+    color: black;
+}
+
+.bottom-left-box {
+    bottom: 0;
+    left: 0;
+}
+
+.img-bottum-right {
+    bottom: -121px;
+    right: -108px;
+    transform: rotate(197deg);
+}
+
+.top-right-box {
+    top: 50px;
+    right: 0;
+}
+
+.sections h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-top: 50px;
+    font-family: "IBM Plex Sans Condensed", Helvetica, Arial, Lucida, sans-serif;
+    color: #22783e;
+    font-weight: 600;
+}
+
+.second-color-line {
+    height: 10px;
+    width: 40%;
+    background-color: #ff9f97;
+    display: block;
+    margin-top: -35px;
+}
+
+.top-right-box.zero {
+    top: 0;
+}
+
+
+/* -----------------3th section area start---------------- */
+
+.third-section-img {
+    padding: 0 20px;
+    margin: 80px 0;
+}
+
+.third-section-title {
+    margin: 80px 0;
+    font-size: 80px;
+    line-height: 80px;
+}
+
+/* -----------------4th section area start---------------- */
+
+.forth-section-img {
+    width: 50%;
+    height: 180px;
+    margin: 40px 0 0 0;
+}
+
+.forth-section-title {
+    margin-bottom: 10px;
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 600;
+    margin-right: 120px;
+}
+
+
+
+/* -----------------5th section area start---------------- */
+
+.fifth-section-title {
+    width: 130%;
+    margin-left: 20%;
+    margin-bottom: 50px;
+}
+
+.bottom-left-box.bigger {
+    height: 60px;
+    width: 150px;
+}
+
+
+/* -----------------6th section area start---------------- */
+
+.download-area {
+    height: 350px;
+}
+
+.download-wapper {
+    align-items: flex-end;
+}
+
+
+/* -----------------7th section area start---------------- */
+
+.contact-info-title h2 {
+    padding-right: 150px;
+}
+
+.contact-info {
+    justify-content: flex-end;
+    padding-bottom: 70px;
+}
+
+.contact-color {
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: #ff9f97;
+}
+
+.contact-list {
+    margin: 50px 0;
+    color: #35783e;
+}
+
+.contact-info-bold {
+    font-weight: bolder;
+}
+
+.contack-info-sicial-link {
+    display: flex;
+}
+
+.contack-info-sicial-link a {
+    margin-right: 10px;
+}
+
+.contack-info-sicial-link a i {
+    font-size: 35px !important;
+}
+
+
+/* -------------------------footer area start-------------------- */
+
+footer {
+    background-color: #2b68fa;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
+    padding: 12px 0;
+    color: #ffffff;
+    font-family: Open Sans, Arial, sans-serif;
+}
+
+footer a {
+    color: #ffffff;
+    font-family: Open Sans, Arial, sans-serif;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #ffffffcb;
+}
+
+/*Back to top button start*/
+
+#topBtn {
+    position: fixed;
+    top: 500px;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    display: none;
+}
+
+/*Back to top button end*/
+
+
+
+/* ############################################################# */
+/* ######################### ######################## */
+/* ========================= about page ======================== */
+/* ######################### ######################## */
+/* ############################################################# */
+
+
+
+.about-section {
+    text-align: center;
+    margin: 100px auto;
+}
+
+.about-section p {
+    color: #7f6666;
+    line-height: 35px;
+    font-family: "IBM Plex Sans Condensed", Helvetica, Arial, Lucida, sans-serif;
+    font-size: 14px;
+}
+
+
+
+/* ############################################################# */
+/* ######################### ##################### */
+/* ========================= privacy page ======================== */
+/* ######################### ###################### */
+/* ############################################################# */
+
+.privacy-sections {
+    margin: 40px 0 20px 0;
+}
+
+.privacy-sections-title {
+    margin-bottom: 28px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.privacy-sections-para {
+    margin-bottom: 14px;
+    color: #666666;
+    font-size: 14px;
+}
+
+.privacy-sections-para li {
+    color: #666666 !important;
+    font-size: 14px;
+}
+
+.para-extra-margin {
+    margin: 50px 0;
+}
+
+.para-itali-style {
+    font-style: italic;
+}
+
+.update-time {
+    font-size: 30px;
+    margin: 50px 0;
+}
+
+/* ############################################################# */
+/* ########################## ###################### */
+/* ========================= contact page ======================= */
+/* ######################### ####################### */
+/* ############################################################# */
+
+.contact-section {
+    margin: 70px 0;
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 14px;
+    font-family: 'IBM Plex Sans Condensed', Helvetica, Arial, Lucida, sans-serif !important;
+}
+
+.name-email {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.name-email input {
+    width: 49%;
+    padding: 13px 20px;
+    outline: none;
+    border: none;
+    background-color: #eeeeee;
+    border-radius: 25px;
+}
+
+.contact-form textarea {
+    width: 100%;
+    height: 140px;
+    border: none;
+    background-color: #eeeeee;
+    border-radius: 25px;
+    outline: none;
+    padding: 13px 20px;
+}
+
+.form-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-btn button {
+    background-color: #000000;
+    margin: 15px 0 0 0;
+    padding: 8px 30px;
+    color: #ffffff;
+    outline: none !important;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'IBM Plex Sans Condensed', Helvetica, Arial, Lucida, sans-serif !important;
+    font-weight: 700 !important;
+}
+
+
+
+/* =============================== ===============================*/
+/* =============================== responsive css ===============================*/
+/* =============================== ===============================*/
+
+
+
+
+/* ------------------------------------------------------------------------------------- */
+
+
+@media screen and (max-width: 1024px) {
+
+    .second-section-title {
+        font-size: 85px;
+    }
+
+    p.second-section-title.forth-section-title {
+        font-size: 75px;
+    }
+
+    p.second-section-title.forth-section-title.fifth-section-title {
+        font-size: 65px;
+    }
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------------- */
+
+
+
+@media screen and (max-width: 991px) {
+    .hidden {
+        display: inline;
+        z-index: 999999999999999;
+    }
+
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+        z-index: 999999999;
+    }
+
+    .header-menu-hidden {
+        display: none;
+    }
+
+    .line {
+        width: 100%;
+        height: 3px;
+        background-color: #447afb;
+        margin-bottom: 40px;
+    }
+
+    .header-menu li {
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    ul.navbar-nav.mr-auto {
+        margin-bottom: 40px;
+    }
+
+    .navbar-nav {
+        margin: 0 40px;
+    }
+
+    div#navbarSupportedContent {
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+        background-color: #ffffff !important;
+    }
+
+    /* ------------------------------ */
+
+    .img-area {
+        width: 40%;
+        height: 266px;
+    }
+
+    p.first-section-title {
+        font-size: 95px;
+        line-height: 90px;
+        margin-top: 105px;
+    }
+
+    p.second-section-title {
+        font-size: 65px;
+        line-height: 75px;
+    }
+
+    p.second-section-title.third-section-title {
+        font-size: 60px;
+    }
+
+    .img-area.forth-section-img {
+        width: 55%;
+        height: 160px;
+    }
+
+    p.second-section-title.forth-section-title {
+        width: 100%;
+        font-size: 60px;
+        margin-left: -75px;
+    }
+
+    .sections h2 {
+        font-size: 40px;
+    }
+
+    .second-color-line {
+        height: 8px;
+        width: 46%;
+    }
+
+    .download-color-line {
+        width: 100%;
+    }
+
+    .download-area {
+        display: none;
+    }
+
+    .downloas-img {
+        margin: 300px 0 60px 0;
+    }
+
+    .download-hidden {
+        display: none;
+    }
+
+    p.second-section-title.forth-section-title.fifth-section-title {
+        width: 175%;
+        font-size: 45px;
+        line-height: 60px;
+        margin: 0px 0px 75px 0px;
+    }
+
+    .contact-list {
+        margin: 20px 0;
+        color: #35783e;
+    }
+
+    footer p {
+        text-align: center;
+    }
+
+}
+
+
+
+/* ------------------------------------------------------------------------------------- */
+
+
+
+@media screen and (max-width: 768px) {
+    .img-area {
+        height: 205px;
+    }
+
+    p.first-section-title {
+        font-size: 70px;
+        margin-top: 56px;
+    }
+
+    span.color-line {
+        height: 17px;
+    }
+
+    .bg-img.img-bottum {
+        width: 185px;
+        height: 190px;
+    }
+
+    .bg-green {
+        height: 28px;
+        width: 70px;
+    }
+
+    .sections h2 {
+        font-size: 33px;
+        margin-bottom: 18px;
+    }
+
+    p.second-section-title {
+        font-size: 46px;
+        line-height: 56px;
+    }
+
+    .bg-img.img-bottum-right {
+        width: 220px;
+        height: 205px;
+    }
+
+    p.second-section-title.third-section-title {
+        font-size: 45px;
+    }
+
+    .img-area.forth-section-img {
+        width: 57%;
+        height: 130px;
+    }
+
+    p.second-section-title.forth-section-title {
+        font-size: 45px;
+    }
+
+    p.second-section-title.forth-section-title.fifth-section-title {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .bottom-left-box.bigger {
+        height: 50px;
+        width: 135px;
+    }
+
+    .downloas-img {
+        margin: 150px 0 60px 0;
+    }
+
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------------- */
+
+
+
+@media screen and (max-width: 538px) {
+    .img-area {
+        height: 160px;
+    }
+
+    p.first-section-title {
+        font-size: 70px;
+        margin-top: 43px;
+        line-height: 70px;
+    }
+
+    .color-line {
+        height: 18px;
+        margin-bottom: 55px;
+    }
+
+    p.second-section-title {
+        margin-bottom: 90px;
+    }
+
+    p.second-section-title {
+        font-size: 43px;
+        line-height: 45px;
+    }
+
+    p.second-section-title.third-section-title {
+        font-size: 40px;
+    }
+
+    .contact-info-title h2 {
+        font-size: 24px;
+        margin-bottom: 5px;
+        margin-right: -70px;
+    }
+
+    .contact-color {
+        height: 5px;
+    }
+
+    .contact-list p {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contack-info-sicial-link a i {
+        font-size: 25px !important;
+    }
+
+    .contact-info {
+        padding-bottom: 30px;
+    }
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------------- */
+
+
+
+@media screen and (max-width: 414px) {
+
+    .logo {
+        height: 50px;
+        width: 50px;
+        margin-top: 12px;
+    }
+
+    div#navbarSupportedContent {
+        margin-top: 18px;
+    }
+
+    .container {
+        padding: 0px 30px !important;
+    }
+
+    .img-area {
+        height: 130px;
+    }
+
+    .bg-green {
+        height: 20px;
+        width: 55px;
+    }
+
+    .bottom-left-box.bigger {
+        height: 38px;
+        width: 100px;
+    }
+
+    p.first-section-title {
+        font-size: 40px;
+        margin-top: 43px;
+        line-height: 45px;
+        margin-bottom: 2px;
+    }
+
+    span.color-line {
+        height: 6px;
+    }
+
+    p.second-section-title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .second-color-line {
+        height: 5px;
+        width: 59%;
+    }
+
+    .sections h2 {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+    p.second-section-title.third-section-title {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    p.second-section-title.forth-section-title {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .img-area.forth-section-img {
+        width: 57%;
+        height: 100px;
+    }
+
+    p.second-section-title.forth-section-title.fifth-section-title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .bg-img.img-bottum-right {
+        width: 211px;
+        height: 185px;
+    }
+
+    .name-email {
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+
+    .name-email input {
+        width: 100%;
+        margin-bottom: 13px;
+    }
+
+    .form-btn button {
+        margin: 5px 0 0 0
+    }
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------------- */
+
+
+
+@media screen and (max-width: 360px) {
+
+    .img-area {
+        height: 100px;
+        width: 100px;
+    }
+
+    p.first-section-title {
+        font-size: 30px;
+        margin-top: 30px;
+        line-height: 37px;
+    }
+
+    p.second-section-title {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    p.second-section-title.forth-section-title.fifth-section-title {
+        font-size: 22px;
+        margin-top: 15px;
+    }
+
+
+}
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------- */
+
+
+
+@media screen and (max-width: 320px) {
+
+    p.second-section-title {
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    p.second-section-title.third-section-title {
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    p.second-section-title.forth-section-title {
+        font-size: 25px;
+        line-height: 28px;
+    }
+
+    .img-area.forth-section-img {
+        width: 60%;
+        height: 85px;
+    }
+
+    p.second-section-title.forth-section-title.fifth-section-title {
+        font-size: 18px;
+        margin-top: 15px;
+        line-height: 22px;
+    }
+
+    .downloas-img {
+        margin: 85px 0 60px 0;
+    }
+
+    .sections h2 {
+        font-size: 21px;
+        margin-bottom: 28px;
+    }
+
+    .contact-info-title h2 {
+        font-size: 21px;
+        margin-bottom: 8px;
+    }
+
+}

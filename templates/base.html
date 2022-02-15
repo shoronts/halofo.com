@@ -1,0 +1,85 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed&display=swap" rel="stylesheet">
+    <!--jQuery start-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--My CSS Start-->
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title>Holafo | Sell Your Xtra Half</title>
+  </head>
+  <body>
+    <!-- =========================================header start========================================= -->
+
+    <div class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a href="/">
+                    <div class="logo">
+                        <img src="{% static 'img/logo.jpeg' %}" alt="">
+                    </div>
+                </a>
+                <button class="navbar-toggler" style="outline: none; border: none;" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span><i class="fas fa-bars" style=" font-size: 25px; color: #447afb;"></i></span>
+                </button>
+
+                <!-- **************** this is responsive nav ber *************** -->
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="header-menu hidden">
+                        <div class="line"></div>
+                        <ul class="navbar-nav mr-auto">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="{% url 'about' %}">About us</a></li>
+                            <li><a href="{% url 'privacy_policy' %}">privacy policy</a></li>
+                            <li><a href="{% url 'contact' %}">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- **************** this is desktop nav ber *************** -->
+
+                <div class="header-menu header-menu-hidden">
+                    <ul>
+                        <li><a class="{% if request.resolver_match.url_name == 'home' %} active {% endif %}" href="/">Home</a></li>
+                        <li><a class="{% if request.resolver_match.url_name == 'about' %} active {% endif %}" href="{% url 'about' %}">About us</a></li>
+                        <li><a class="{% if request.resolver_match.url_name == 'privacy_policy' %} active {% endif %}" href="{% url 'privacy_policy' %}">privacy policy</a></li>
+                        <li><a class="{% if request.resolver_match.url_name == 'contact' %} active {% endif %}" href="{% url 'contact' %}">Contact us</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+
+        </div>
+    </div>
+
+    <!-- =========================================header end========================================= -->
+    {% block content %}
+
+    {% endblock %}
+    
+    <footer>
+        <div class="container">
+            <p>
+                POWERED BY <a href="/">HALOFO.COM</a>
+            </p>
+        </div>
+    </footer>
+    <button id="topBtn" class="btn btn-primary"><i class="fas fa-rocket"></i></button>
+    <script src="https://kit.fontawesome.com/bdb42816d8.js" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- first Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+  </body>
+</html>

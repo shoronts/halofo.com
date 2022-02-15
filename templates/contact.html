@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<!-- ======================contact section============================== -->
+<div class="container">
+    <div class="contact-section">
+        <h2>
+            CONTACT US
+        </h2>
+
+        <div class="contact-form">
+            <form action="{% url 'contact' %}" method="POST">
+                {% csrf_token %}
+                <div class="name-email">
+                    <input required name="name" type="text" placeholder="Full Name">
+                    <input required name="email" type="email" placeholder="Email Address">
+                </div>
+                <textarea required name="text" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                <div class="d-flex justify-content-between">
+                    <div class="message">
+                        {% for message in messages %}
+                            <p class="text">{{message}}</p>
+                        {% endfor %}
+                    </div>
+                    <div class="form-btn">
+                        <button type="submit"> Send </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
